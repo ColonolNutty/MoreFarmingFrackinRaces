@@ -1,6 +1,6 @@
 {
   "author" : "ColonolNutty",
-  "description" : "THIS REQUIRES \"CN MORE FARMING: REVITALIZATION\" LOOK FOR A LINK IN THE REQUIREMENTS SECTION TO THE RIGHT\n\nAn addon for More Farming that adds crops to Frackin' Universe Biomes as well as support for a bunch of other things. THIS REQUIRES 'CN MORE FARMING: REVITALIZATION"\n\nFeatures:\n\n- Frackin' Races food type support, updates MFM foods to use the FR food types, such as carnivores being able to eat raw food.",
+  "description" : "THIS REQUIRES \"CN MORE FARMING: REVITALIZATION\" LOOK FOR A LINK IN THE REQUIREMENTS SECTION TO THE RIGHT\n\n- Frackin' Races food type support, updates MFM foods to use the FR food types, such as carnivores being able to eat raw food.",
   "friendlyName" : "CN More Farming - Frackin' Races",
   "includes" : ["MoreFarming", "FrackinRaces"],
   "name" : "MoreFarmingFR",

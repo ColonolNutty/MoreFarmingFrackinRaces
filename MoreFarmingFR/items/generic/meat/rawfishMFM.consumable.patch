@@ -1,0 +1,11 @@
+[
+  {
+    "op" : "replace",
+    "path" : "/effects",
+    "value" : [[
+      {
+        "effect" : "carnivorefoodnopoison"
+      }
+    ]]
+  }
+]
