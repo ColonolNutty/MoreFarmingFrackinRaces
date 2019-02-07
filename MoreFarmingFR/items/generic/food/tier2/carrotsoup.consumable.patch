@@ -1,0 +1,33 @@
+[
+  [
+    {
+      "op" : "test",
+      "path" : "/effects",
+      "inverse" : true
+    },
+    {
+      "op" : "add",
+      "path" : "/effects",
+      "value" : [[ ]]
+    }
+  ],
+  [
+    {
+      "op" : "replace",
+      "path" : "/effects",
+      "value" : [[
+        {
+          "effect" : "antidote",
+          "duration" : 10
+        },
+        {
+          "effect" : "poisonblock",
+          "duration" : 200
+        },
+        {
+          "effect" : "herbivorefood"
+        }
+      ]]
+    }
+  ]
+]

@@ -1,9 +1,33 @@
 [
-  {
-    "op" : "add",
-    "path" : "/effects/0/-",
-    "value" : {
-        "effect" : "carnivorefoodnopoison"
-      }
-  }
+  [
+    {
+      "op" : "test",
+      "path" : "/effects",
+      "inverse" : true
+    },
+    {
+      "op" : "add",
+      "path" : "/effects",
+      "value" : [[ ]]
+    }
+  ],
+  [
+    {
+      "op" : "replace",
+      "path" : "/effects",
+      "value" : [[
+        {
+          "effect" : "burning",
+          "duration" : 5
+        },
+        {
+          "effect" : "camouflage25",
+          "duration" : 32
+        },
+        {
+          "effect" : "carnivorefoodnopoison"
+        }
+      ]]
+    }
+  ]
 ]
