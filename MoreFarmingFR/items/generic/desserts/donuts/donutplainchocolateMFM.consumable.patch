@@ -17,8 +17,8 @@
       "path" : "/effects",
       "value" : [[
         {
-          "effect" : "swimboost",
-          "duration" : 54
+          "effect" : "camouflage25",
+          "duration" : 32
         },
         {
           "effect" : "sugarfood"

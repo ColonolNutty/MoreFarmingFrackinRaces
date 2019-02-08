@@ -17,8 +17,11 @@
       "path" : "/effects",
       "value" : [[
         {
-          "effect" : "swimboost",
-          "duration" : 54
+          "effect" : "iceblock",
+          "duration" : 199
+        },
+        {
+          "effect" : "herbivorefood"
         },
         {
           "effect" : "sugarfood"
