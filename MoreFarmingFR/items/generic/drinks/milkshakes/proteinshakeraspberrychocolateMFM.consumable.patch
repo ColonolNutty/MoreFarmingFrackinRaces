@@ -1,0 +1,37 @@
+[
+  [
+    {
+      "op" : "test",
+      "path" : "/effects",
+      "inverse" : true
+    },
+    {
+      "op" : "add",
+      "path" : "/effects",
+      "value" : [[ ]]
+    }
+  ],
+  [
+    {
+      "op" : "replace",
+      "path" : "/effects",
+      "value" : [[
+        {
+          "effect" : "jumpboostfood",
+          "duration" : 52
+        },
+        {
+          "effect" : "runboostfood",
+          "duration" : 52
+        },
+        {
+          "effect" : "ragefood",
+          "duration" : 105
+        },
+        {
+          "effect" : "herbivorefood"
+        }
+      ]]
+    }
+  ]
+]

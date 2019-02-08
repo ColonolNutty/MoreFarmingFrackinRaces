@@ -1,0 +1,29 @@
+[
+  [
+    {
+      "op" : "test",
+      "path" : "/effects",
+      "inverse" : true
+    },
+    {
+      "op" : "add",
+      "path" : "/effects",
+      "value" : [[ ]]
+    }
+  ],
+  [
+    {
+      "op" : "replace",
+      "path" : "/effects",
+      "value" : [[
+        {
+          "effect" : "runboostfood",
+          "duration" : 32
+        },
+        {
+          "effect" : "herbivorefood"
+        }
+      ]]
+    }
+  ]
+]

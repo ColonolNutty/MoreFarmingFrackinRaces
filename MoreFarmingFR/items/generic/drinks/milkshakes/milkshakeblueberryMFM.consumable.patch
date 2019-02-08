@@ -1,0 +1,32 @@
+[
+  [
+    {
+      "op" : "test",
+      "path" : "/effects",
+      "inverse" : true
+    },
+    {
+      "op" : "add",
+      "path" : "/effects",
+      "value" : [[ ]]
+    }
+  ],
+  [
+    {
+      "op" : "replace",
+      "path" : "/effects",
+      "value" : [[
+        {
+          "effect" : "iceblock",
+          "duration" : 49
+        },
+        {
+          "effect" : "herbivorefood"
+        },
+        {
+          "effect" : "sugarfood"
+        }
+      ]]
+    }
+  ]
+]
