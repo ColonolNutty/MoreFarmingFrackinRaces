@@ -13,13 +13,11 @@
   ],
   [
     {
-      "op" : "replace",
-      "path" : "/effects",
-      "value" : [[
-        {
-          "effect" : "carnivorefood"
-        }
-      ]]
+      "op" : "add",
+      "path" : "/effects/0/0",
+      "value" : {
+        "effect" : "carnivorefoodrawMFM"
+      }
     }
   ]
 ]

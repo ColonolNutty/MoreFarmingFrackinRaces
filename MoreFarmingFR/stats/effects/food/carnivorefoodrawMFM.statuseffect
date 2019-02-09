@@ -1,0 +1,19 @@
+{
+  "name" : "carnivorefoodrawMFM",
+
+  "effectConfig" : {
+    "healthBonus" : 0.10,
+    "energyBonus" : 0.10,
+    "protectionBonus" : 2
+  },
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "carnivorefoodrawMFM.lua"
+  ],
+
+  "animationConfig" : "carnivorefood.animation",
+
+  "label" : "Carnivore Food Raw - Meat eaters get a buff. Omnivores, Robots and Herbivores get sick.",
+  "icon" : "/interface/statuses/foodpoisonfloran.png"
+}

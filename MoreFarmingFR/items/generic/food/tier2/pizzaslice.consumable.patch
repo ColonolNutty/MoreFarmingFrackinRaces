@@ -29,7 +29,7 @@
           "duration" : 72
         },
         {
-          "effect" : "carnivorefoodnopoison"
+          "effect" : "carnivorefoodnopoisonMFM"
         }
       ]]
     }
