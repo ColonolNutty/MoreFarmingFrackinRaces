@@ -21,10 +21,10 @@
           "duration" : 15
         },
         {
-          "effect" : "herbivorefood"
+          "effect" : "herbivorefoodMFM"
         },
         {
-          "effect" : "sugarfood"
+          "effect" : "sugarfoodMFM"
         }
       ]]
     }

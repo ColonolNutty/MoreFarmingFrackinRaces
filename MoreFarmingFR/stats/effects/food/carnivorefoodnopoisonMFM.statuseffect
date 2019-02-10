@@ -2,18 +2,16 @@
   "name" : "carnivorefoodnopoisonMFM",
 
   "effectConfig" : {
-  "healthBonus" : 0.05,
-  "energyBonus" : 0.05,
-  "protectionBonus" : 1
+    "foodType" : "carnivorefoodnopoison"
   },
   "defaultDuration" : 120,
 
   "scripts" : [
-    "carnivorefoodnopoisonMFM.lua"
+    "foodMFM.lua"
   ],
 
-  "animationConfig" : "carnivorefoodnopoison.animation",
+  "animationConfig" : "foodMFM.animation",
 
-  "label" : "Tasty Meat - Carnivores and Omnivores won't get sick.",
-  "icon" : "/interface/statuses/foodpoisonfloran2.png"
+  "label" : "Carnivore Food - No Poison",
+  "icon" : "/interface/statuses/wellfed.png"
 }

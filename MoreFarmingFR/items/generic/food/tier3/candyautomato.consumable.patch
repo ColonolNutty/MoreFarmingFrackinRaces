@@ -17,10 +17,10 @@
       "path" : "/effects",
       "value" : [[
         {
-          "effect" : "robofood"
+          "effect" : "robofoodMFM"
         },
         {
-          "effect" : "sugarfood"
+          "effect" : "sugarfoodMFM"
         }
       ]]
     }

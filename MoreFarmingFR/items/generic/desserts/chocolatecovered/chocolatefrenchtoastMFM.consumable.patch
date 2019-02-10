@@ -20,7 +20,7 @@
           "effect" : "carnivorefoodnopoisonMFM"
         },
         {
-          "effect" : "sugarfood"
+          "effect" : "sugarfoodMFM"
         }
       ]]
     }

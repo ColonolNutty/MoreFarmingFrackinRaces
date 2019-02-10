@@ -7,11 +7,11 @@
   "defaultDuration" : 1,
 
   "scripts" : [
-    "carnivorefoodrawMFM.lua"
+    "foodMFM.lua"
   ],
 
-  "animationConfig" : "carnivorefood.animation",
+  "animationConfig" : "foodMFM.animation",
 
-  "label" : "Carnivore Food Raw - Meat eaters get a buff. Omnivores, Robots and Herbivores get sick.",
-  "icon" : "/interface/statuses/foodpoisonfloran.png"
+  "label" : "Carnivore Food - Raw",
+  "icon" : "/interface/statuses/wellfed.png"
 }

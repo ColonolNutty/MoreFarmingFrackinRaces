@@ -25,7 +25,7 @@
           "duration" : 32
         },
         {
-          "effect" : "herbivorefood"
+          "effect" : "herbivorefoodMFM"
         }
       ]]
     }

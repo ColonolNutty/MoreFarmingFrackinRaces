@@ -1,0 +1,17 @@
+{
+  "name" : "radioactivefoodMFM",
+
+  "effectConfig" : {
+    "foodType" : "radioactivefood"
+  },
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "foodMFM.lua"
+  ],
+
+  "animationConfig" : "foodMFM.animation",
+
+  "label" : "Radioactive Food",
+  "icon" : "/interface/statuses/wellfed.png"
+}
