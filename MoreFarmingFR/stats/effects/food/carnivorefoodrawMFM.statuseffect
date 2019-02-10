@@ -2,9 +2,7 @@
   "name" : "carnivorefoodrawMFM",
 
   "effectConfig" : {
-    "healthBonus" : 0.10,
-    "energyBonus" : 0.10,
-    "protectionBonus" : 2
+    "foodType" : "carnivorefood"
   },
   "defaultDuration" : 1,
 

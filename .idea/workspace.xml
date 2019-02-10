@@ -1,59 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/unfinished/pie/rawpiefishMFM.consumable.patch" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="127bcfeb-cda2-4165-a6d3-39a34b2931d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodnopoisonMFM.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodnopoisonMFM.statuseffect" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.statuseffect" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/chocolatecovered/chocolatecoveredbaconMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/chocolatecovered/chocolatecoveredbaconMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/chocolatecovered/chocolatefrenchtoastMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/chocolatecovered/chocolatefrenchtoastMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/drinks/eggnogMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/drinks/eggnogMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier1/fishfingers.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier1/fishfingers.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier1/fishnchips.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier1/fishnchips.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier1/fishpie.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier1/fishpie.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier1/fishstew.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier1/fishstew.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier1/meatpie.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier1/meatpie.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier1/meatstew.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier1/meatstew.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/baconpancakes.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/baconpancakes.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/cheeseburger.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/cheeseburger.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/hamburger.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/hamburger.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/omelette.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/omelette.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/pasty.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/pasty.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/pizza.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/pizza.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/pizzaslice.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/pizzaslice.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/quichelorraine.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/quichelorraine.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/roastdinner.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier2/roastdinner.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier3/fishinabone.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier3/fishinabone.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier4/bloodypuss.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier4/bloodypuss.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier4/oceanrisotto.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier4/oceanrisotto.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier4/oceansurprise.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier4/oceansurprise.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier4/seafoodgratin.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier4/seafoodgratin.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier6/burningeyeballs.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier6/burningeyeballs.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier6/hotbone.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier6/hotbone.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier6/hothothotpot.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier6/hothothotpot.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier6/spicyribs.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/food/tier6/spicyribs.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/meal/canned/rawcannedfishMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/meal/canned/rawcannedfishMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/meat/bologneseMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/meat/bologneseMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/meat/rawfishMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/meat/rawfishMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/raweelMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/raweelMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawlobsterMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawlobsterMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawmeatpattyMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawmeatpattyMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawoctopusMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawoctopusMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawsalmonMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawsalmonMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawsausagealienpoultryMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawsausagealienpoultryMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawshrimpMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawshrimpMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawsquidMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawsquidMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawstripofalienmeatMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawstripofalienmeatMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawstripoffishMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawstripoffishMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawstripofpoultryMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawstripofpoultryMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawtunaMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/rawtunaMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/rawfishinaboneMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/rawfishinaboneMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/unfinished/pie/rawpiefishMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/unfinished/pie/rawpiefishMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/unfinished/pie/rawpiemeatMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/unfinished/pie/rawpiemeatMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/produce/finkelMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/produce/finkelMFM.consumable.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/items/generic/produce/palsterstickMFM.consumable.patch" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/items/generic/produce/palsterstickMFM.consumable.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.lua" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.statuseffect" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.statuseffect" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,16 +42,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="config" value="23" />
-          <entry key="lua" value="4038" />
+          <entry key="lua" value="11410" />
           <entry key="metadata" value="180" />
           <entry key="patch" value="1373" />
-          <entry key="statuseffect" value="129" />
+          <entry key="statuseffect" value="413" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="1525" />
-          <entry key="Lua" value="4038" />
+          <entry key="JSON" value="1809" />
+          <entry key="Lua" value="11410" />
           <entry key="PLAIN_TEXT" value="180" />
         </counts>
       </usages-collector>
@@ -118,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="306">
+              <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -145,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.statuseffect">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="85">
+              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -166,6 +119,22 @@
       <find>5</find>
       <find>effectData not found</find>
       <find>validPositiveEffects</find>
+      <find>logInfo</find>
+      <find>foodpoison</find>
+      <find>overrideFoodEffects</find>
+      <find>appliedEffects</find>
+      <find>overrodeEffects</find>
+      <find>foundTotal</find>
+      <find>species</find>
+      <find>name</find>
+      <find>removedPreviousEffects</find>
+      <find>isCarnivore</find>
+      <find>isPureCarnivore()</find>
+      <find>isPureHerbivore</find>
+      <find>isHerbivore</find>
+      <find>applyPositiveEffects</find>
+      <find>isSugarFood</find>
+      <find>displayFoodTypeMessage</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;cncarnivorefood&quot;</replace>
@@ -173,6 +142,10 @@
       <replace>&quot;carnivorefoodnopoisonMFM&quot;</replace>
       <replace>status.statPositive</replace>
       <replace>overrideFoodEffects</replace>
+      <replace>hasAppliedEffects</replace>
+      <replace>removedPreviousEffects</replace>
+      <replace>isCarnivore()</replace>
+      <replace>isHerbivore</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Work\StarboundProjects\MoreFarmingFrackinRaces\MoreFarmingFR\items</dir>
@@ -239,7 +212,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="98" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
     <option name="width" value="1040" />
     <option name="height" value="734" />
   </component>
@@ -629,24 +603,10 @@
     <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/unfinished/pie/rawpiemeatMFM.consumable.patch">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/unfinished/pie/rawpiefishMFM.consumable.patch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodnopoisonMFM.statuseffect">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.statuseffect">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -657,10 +617,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.lua">
+    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.statuseffect">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/unfinished/pie/rawpiefishMFM.consumable.patch">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
         </state>
       </provider>
     </entry>

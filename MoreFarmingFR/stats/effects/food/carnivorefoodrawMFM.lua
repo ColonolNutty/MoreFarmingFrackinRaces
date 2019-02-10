@@ -1,103 +1,101 @@
-function init()
-  self.overrideFoodEffects = {
-    "maxenergyscalingboostfood",
-    "energyregen",
-    "maxhealthscalingboostfood"
-  };
-  self.name = config.getParameter("name", nil)
-  script.setUpdateDelta(5)
-  self.species = world.entitySpecies(entity.id())
-  if (status.statPositive("isHerbivore") or status.statPositive("isRobot") or status.statPositive("isOmnivore") or status.statPositive("isSugar")) and not(status.statPositive("isOmnivore")) then
-    world.sendEntityMessage(entity.id(), "queueRadioMessage", "foodtype")
+OVERRIDE_EFFECTS = {
+  "maxenergyscalingboostfood",
+  "maxhealthscalingboostfood",
+  "energyregen"
+};
+
+NEGATIVE_EFFECTS = {
+  "foodpoison"
+};
+
+function isFoodSafeToEat()
+  if isCarnivoreFood() then
+    return (isCarnivore() or isRadien() or isMantizi()) or (isCarnivore() and isOmnivore())
+  elseif isCarnivoreFoodNoPoison() then
+    return isCarnivore() or isOmnivore() or isRadien() or isMantizi()
+  elseif isHerbivoreFood() then
+     return (isHerbivore() or isOmnivore() or isRadien() or isMantizi() or (isCarnivore() and isOmnivore())) or (isSugar() and isSugarFood())
+  elseif isRadioactiveFood() then
+    return isRadienSpecies() or isNovakidSpecies() or isRadien()
+  elseif isRobotFood() then
+    return isRobot() or isRadien() or isMantizi()
   end
-  status.clearPersistentEffects("glitchpower1")
-  status.clearPersistentEffects("veggiepower")
-  self.appliedEffects = false;
-  self.overrodeEffects = false;
+  return false;
+end
+
+function init()
+  self.foodType = config.getParameter("foodType", nil)
+  self.species = world.entitySpecies(entity.id())
+  self.hasAppliedEffects = false;
   self.durations = nil;
-  self.positiveEffects = nil;
-  self.foundTotalDurations = false;
 end
 
 function update(dt)
-  if self.appliedEffects then
+  if self.hasAppliedEffects then
     return;
   end
-  if self.overrodeEffects then
-    if status.statPositive("isCarnivore") or status.statPositive("isRadien") or status.statPositive("isMantizi") then
-      applyEffects()
-      self.appliedEffects = true;
-    elseif status.statPositive("isCarnivore") and status.statPositive("isOmnivore") then
-      applyEffects()
-      self.appliedEffects = true;
-    elseif status.statPositive("isHerbivore") or status.statPositive("isRobot") or status.statPositive("isOmnivore") or status.statPositive("isSugar") then
-      applyPenalty()
-      self.appliedEffects = true;
-    end
+  local positiveEffects = discoverPositiveEffects(dt)
+  if positiveEffects == nil then
     return;
   end
-  discoverStatusDurations(dt)
-  if self.positiveEffects == nil then
-    return;
-  end
-  for idx, positiveEffect in ipairs(self.positiveEffects) do
+  for idx, positiveEffect in ipairs(positiveEffects) do
     status.removeEphemeralEffect(positiveEffect.effect);
   end
-  status.removeEphemeralEffect("foodpoison")
-  self.overrodeEffects = true;
-end
-
-function discoverStatusDurations(dt)
-  if self.durations == nil then
-    self.durations = {};
-    local effects = status.activeUniqueStatusEffectSummary()
-    if (#effects > 0) then
-      for i = 1, #effects do
-        local effectName = effects[i][1]
-        if contains_value(self.overrideFoodEffects, effectName) then
-          local effectData = {}
-          effectData["previousDurationPercentage"] = effects[i][2]
-          self.durations[effectName] = effectData
-        end
-      end
-    end
-    return
+  for idx, negative_effect in ipairs(NEGATIVE_EFFECTS) do
+    status.removeEphemeralEffect(negative_effect);
   end
-  if not(self.foundTotalDurations) then
-    self.foundTotalDurations = true
-    self.positiveEffects = {}
-    local effects = status.activeUniqueStatusEffectSummary()
-    if (#effects > 0) then
-      for i = 1, #effects do
-        local effectName = effects[i][1]
-        local effectData = self.durations[effectName]
-        if effectData then
-          local previousDurationPercentage = effectData["previousDurationPercentage"]
-          local currentDurationPerecentage = effects[i][2]
-          local differenceSinceLastTick = previousDurationPercentage - currentDurationPerecentage
-          local totalDuration = dt/differenceSinceLastTick
-          table.insert(self.positiveEffects, {effect = effectName, duration = totalDuration})
-        end
-      end
-    end
+  if isFoodSafeToEat() then
+    applyEffects(positiveEffects)
+  else
+    applyEffects(NEGATIVE_EFFECTS)
   end
-end
-
-function applyPenalty()
-  status.addEphemeralEffects({"foodpoison"}, entity.id())
-  mcontroller.controlModifiers({ airJumpModifier = 0.08, speedModifier = 0.08 })
-  status.removeEphemeralEffect("wellfed")
-  if status.resourcePercentage("food") > 0.85 then
-    status.setResourcePercentage("food", 0.85)
-  end
-end
-
-function applyEffects()
-  status.addEphemeralEffects(self.positiveEffects)
+  self.hasAppliedEffects = true;
 end
 
 function uninit()
-  status.clearPersistentEffects("floranpower1")
+end
+
+function discoverPositiveEffects(dt)
+  local effects = status.activeUniqueStatusEffectSummary()
+  if (#effects <= 0) then
+    return nil;
+  end
+  if self.durations == nil then
+    self.durations = {};
+    for i = 1, #effects do
+      local effectName = effects[i][1];
+      if contains_value(OVERRIDE_EFFECTS, effectName) then
+        local effectData = {};
+        local duration = effects[i][2];
+        if duration >= 1.0 then
+          self.durations = nil;
+          return nil;
+        end
+        effectData["previousDurationPercentage"] = duration;
+        self.durations[effectName] = effectData;
+      end
+    end
+    return nil;
+  end
+
+  local positiveEffects = {}
+  for i = 1, #effects do
+    local effectName = effects[i][1]
+    local effectData = self.durations[effectName]
+    if effectData then
+      local currentDurationPercentage = effects[i][2]
+      local previousDurationPercentage = effectData["previousDurationPercentage"]
+      local differenceSinceLastTick = previousDurationPercentage - currentDurationPercentage
+      local totalDuration = dt/differenceSinceLastTick
+      table.insert(positiveEffects, {effect = effectName, duration = totalDuration})
+    end
+  end
+  return positiveEffects
+end
+
+function applyEffects(effects)
+  status.addEphemeralEffects(effects, entity.id())
+  status.addEphemeralEffects({self.foodType}, entity.id())
 end
 
 function contains_value(tab, val)
@@ -107,4 +105,68 @@ function contains_value(tab, val)
     end
   end
   return false
+end
+
+function isCarnivoreFood()
+  return self.foodType == "carnivorefood"
+end
+
+function isCarnivoreFoodNoPoison()
+  return self.foodType == "carnivorefoodnopoison"
+end
+
+function isHerbivoreFood()
+  return self.foodType == "herbivorefood"
+end
+
+function isRobotFood()
+  return self.foodType == "robofood"
+end
+
+function isSugarFood()
+  return self.foodType == "sugarfood"
+end
+
+function isRadioactiveFood()
+  return self.foodType == "radioactive"
+end
+
+function isRadienSpecies()
+  return self.species == "radien"
+end
+
+function isNovakidSpecies()
+  return self.species == "novakid"
+end
+
+function isMantiziSpecies()
+  return self.species == "mantizi"
+end
+
+function isRadien()
+  return status.statPositive("isRadien")
+end
+
+function isMantizi()
+  return status.statPositive("isMantizi")
+end
+
+function isCarnivore()
+  return status.statPositive("isCarnivore")
+end
+
+function isOmnivore()
+  return status.statPositive("isOmnivore")
+end
+
+function isHerbivore()
+  return status.statPositive("isHerbivore")
+end
+
+function isRobot()
+  return status.statPositive("isRobot")
+end
+
+function isSugar()
+  return status.statPositive("isSugar")
 end
