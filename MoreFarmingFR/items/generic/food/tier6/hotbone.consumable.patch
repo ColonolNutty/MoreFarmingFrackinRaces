@@ -13,17 +13,11 @@
   ],
   [
     {
-      "op" : "replace",
-      "path" : "/effects",
-      "value" : [[
-        {
-          "effect" : "burning",
-          "duration" : 5
-        },
-        {
-          "effect" : "carnivorefoodnopoisonMFM"
-        }
-      ]]
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "carnivorefoodnopoisonMFM"
+      }
     }
   ]
 ]

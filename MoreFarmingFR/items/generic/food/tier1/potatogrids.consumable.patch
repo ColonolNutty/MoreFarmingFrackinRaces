@@ -13,17 +13,11 @@
   ],
   [
     {
-      "op" : "replace",
-      "path" : "/effects",
-      "value" : [[
-        {
-          "effect" : "camouflage25",
-          "duration" : 32
-        },
-        {
-          "effect" : "herbivorefoodMFM"
-        }
-      ]]
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "herbivorefoodMFM"
+      }
     }
   ]
 ]

@@ -13,21 +13,11 @@
   ],
   [
     {
-      "op" : "replace",
-      "path" : "/effects",
-      "value" : [[
-        {
-          "effect" : "camouflage25",
-          "duration" : 34
-        },
-        {
-          "effect" : "weakpoison",
-          "duration" : 21
-        },
-        {
-          "effect" : "robofoodMFM"
-        }
-      ]]
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "robofoodMFM"
+      }
     }
   ]
 ]

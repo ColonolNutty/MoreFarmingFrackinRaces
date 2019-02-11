@@ -13,17 +13,18 @@
   ],
   [
     {
-      "op" : "replace",
-      "path" : "/effects",
-      "value" : [[
-        {
-          "effect" : "weakpoison",
-          "duration" : 15
-        },
-        {
-          "effect" : "herbivorefoodMFM"
-        }
-      ]]
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "herbivorefoodMFM"
+      }
+    },
+    {
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "sugarfoodMFM"
+      }
     }
   ]
 ]

@@ -13,17 +13,11 @@
   ],
   [
     {
-      "op" : "replace",
-      "path" : "/effects",
-      "value" : [[
-        {
-          "effect" : "ragefood",
-          "duration" : 180
-        },
-        {
-          "effect" : "carnivorefoodnopoisonMFM"
-        }
-      ]]
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "carnivorefoodnopoisonMFM"
+      }
     }
   ]
 ]

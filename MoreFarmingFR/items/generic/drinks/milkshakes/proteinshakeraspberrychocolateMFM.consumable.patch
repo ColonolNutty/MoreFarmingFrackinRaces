@@ -13,25 +13,11 @@
   ],
   [
     {
-      "op" : "replace",
-      "path" : "/effects",
-      "value" : [[
-        {
-          "effect" : "jumpboostfood",
-          "duration" : 52
-        },
-        {
-          "effect" : "runboostfood",
-          "duration" : 52
-        },
-        {
-          "effect" : "ragefood",
-          "duration" : 105
-        },
-        {
-          "effect" : "herbivorefood"
-        }
-      ]]
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "herbivorefoodMFM"
+      }
     }
   ]
 ]

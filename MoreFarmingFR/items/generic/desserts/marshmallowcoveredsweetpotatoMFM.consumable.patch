@@ -13,20 +13,18 @@
   ],
   [
     {
-      "op" : "replace",
-      "path" : "/effects",
-      "value" : [[
-        {
-          "effect" : "camouflage25",
-          "duration" : 133
-        },
-        {
-          "effect" : "herbivorefood"
-        },
-        {
-          "effect" : "sugarfoodMFM"
-        }
-      ]]
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "herbivorefoodMFM"
+      }
+    },
+    {
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "sugarfoodMFM"
+      }
     }
   ]
 ]

@@ -14,7 +14,7 @@
   [
     {
       "op" : "add",
-      "path" : "/effects/0/0",
+      "path" : "/effects/0/-",
       "value" : {
         "effect" : "carnivorefoodrawMFM"
       }

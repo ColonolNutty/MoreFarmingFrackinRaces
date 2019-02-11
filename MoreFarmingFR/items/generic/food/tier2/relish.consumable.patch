@@ -13,25 +13,11 @@
   ],
   [
     {
-      "op" : "replace",
-      "path" : "/effects",
-      "value" : [[
-        {
-          "effect" : "rage",
-          "duration" : 32
-        },
-        {
-          "effect" : "burning",
-          "duration" : 32
-        },
-        {
-          "effect" : "iceblock",
-          "duration" : 66
-        },
-        {
-          "effect" : "herbivorefoodMFM"
-        }
-      ]]
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "herbivorefoodMFM"
+      }
     }
   ]
 ]

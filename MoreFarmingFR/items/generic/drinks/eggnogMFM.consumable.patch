@@ -13,16 +13,18 @@
   ],
   [
     {
-      "op" : "replace",
-      "path" : "/effects",
-      "value" : [[
-        {
-          "effect" : "carnivorefoodnopoisonMFM"
-        },
-        {
-          "effect" : "sugarfoodMFM"
-        }
-      ]]
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "carnivorefoodnopoisonMFM"
+      }
+    },
+    {
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "sugarfoodMFM"
+      }
     }
   ]
 ]
