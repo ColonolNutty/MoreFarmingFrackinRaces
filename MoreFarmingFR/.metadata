@@ -1,6 +1,6 @@
 {
   "author" : "ColonolNutty",
-  "description" : "THIS REQUIRES \"CN MORE FARMING: REVITALIZATION\" LOOK FOR A LINK IN THE REQUIREMENTS SECTION TO THE RIGHT\nIf you enjoy the mod, consider donating to my patreon account [url=https://www.patreon.com/colonolnutty]here[/url].\n\n- Frackin' Races food type support, updates MFM foods to use the FR food types, such as carnivores being able to eat raw food or herbivores eating plants.\n- Prevents overriding of Frackin' Races foods.",
+  "description" : "THIS REQUIRES \"CN MORE FARMING: REVITALIZATION\" LOOK FOR A LINK IN THE REQUIREMENTS SECTION TO THE RIGHT\nIf you enjoy the mod, consider donating to my patreon account [url=https://www.patreon.com/colonolnutty]here[/url].\n\nIf you are subscribing to this version of the mod (Steam) then I'd recommend you also subscribe to the Steam version of More Farming and not the Chucklefish forums version, as you'll run into issues if you don't\n\nOtherwise here is a link to the chucklefish forums page: https://community.playstarbound.com/resources/cn-more-farming-revitalization-frackin-races-patch.5670/\n\nFeatures:\n- Frackin' Races food type support, updates MFM foods to use the FR food types, such as carnivores being able to eat raw food or herbivores eating plants.\n- Prevents overriding of Frackin' Races foods.",
   "friendlyName" : "CN More Farming - Frackin' Races",
   "includes" : ["MoreFarming", "FrackinRaces"],
   "link" : "steam://url/CommunityFilePage/1652841243",
