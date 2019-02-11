@@ -1,7 +1,29 @@
 OVERRIDE_EFFECTS = {
+  "maxenergyscalingboost",
   "maxenergyscalingboostfood",
   "maxhealthscalingboostfood",
-  "energyregen"
+  "energyregen",
+  "runboostfood",
+  "jumpboostfood",
+  "swimboost",
+  "regeneration1",
+  "regeneration2",
+  "regeneration3",
+  "camouflage25",
+  "poisonblock",
+  "iceblock",
+  "electricblock",
+  "fireblock",
+  "nova",
+  "rage",
+  "ragefood",
+  "antidote",
+  "burning",
+  "glow",
+  "thorns",
+  "lowgrav",
+  "ghostlyglow",
+  "mudslow"
 };
 
 NEGATIVE_EFFECTS = {

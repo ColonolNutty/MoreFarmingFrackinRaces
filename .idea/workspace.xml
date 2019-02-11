@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="127bcfeb-cda2-4165-a6d3-39a34b2931d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/foodMFM.animation" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/herbivorefoodMFM.statuseffect" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/radioactivefoodMFM.statuseffect" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/robofood2MFM.statuseffect" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/robofood3MFM.statuseffect" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/robofoodMFM.statuseffect" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/sugarfoodMFM.statuseffect" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodnopoisonMFM.statuseffect" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodnopoisonMFM.statuseffect" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.lua" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/foodMFM.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.statuseffect" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.statuseffect" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodnopoisonMFM.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/foodMFM.lua" beforeDir="false" afterPath="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/foodMFM.lua" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,32 +27,32 @@
         <counts>
           <entry key="animation" value="3" />
           <entry key="config" value="2" />
-          <entry key="lua" value="7" />
+          <entry key="lua" value="8" />
           <entry key="metadata" value="4" />
-          <entry key="patch" value="460" />
+          <entry key="patch" value="462" />
           <entry key="statuseffect" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="478" />
-          <entry key="Lua" value="7" />
+          <entry key="JSON" value="480" />
+          <entry key="Lua" value="8" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="config" value="23" />
-          <entry key="lua" value="11410" />
+          <entry key="lua" value="11448" />
           <entry key="metadata" value="180" />
-          <entry key="patch" value="1373" />
+          <entry key="patch" value="1374" />
           <entry key="statuseffect" value="585" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="1981" />
-          <entry key="Lua" value="11410" />
+          <entry key="JSON" value="1982" />
+          <entry key="Lua" value="11448" />
           <entry key="PLAIN_TEXT" value="180" />
         </counts>
       </usages-collector>
@@ -69,55 +61,28 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodnopoisonMFM.lua">
+        <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/brownies/browniechocolateMFM.consumable.patch">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="272">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/foodMFM.lua">
+        <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/brownies/browniejelonMFM.consumable.patch">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodnopoisonMFM.statuseffect">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/foodMFM.animation">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/radioactivefoodMFM.statuseffect">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            <state relative-caret-position="323">
+              <caret line="19" column="31" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/sugarfoodMFM.statuseffect">
+        <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/foodMFM.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="251">
+              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -175,9 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/icecream/snowconeblueMFM.consumable.patch" />
-        <option value="$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/other/chocolatebunnydarkMFM.consumable.patch" />
-        <option value="$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/pies/piebutterscotchcinnamonMFM.consumable.patch" />
         <option value="$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/pudding/chocolatepuddingMFM.consumable.patch" />
         <option value="$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/lollipopMFM.consumable.patch" />
         <option value="$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/brownies/browniejelonMFM.consumable.patch" />
@@ -216,7 +178,6 @@
         <option value="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/cnhcarnivorefood.statuseffect" />
         <option value="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/cncarnivorefoodcooked.statuseffect" />
         <option value="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodnopoisonMFM.lua" />
-        <option value="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/unfinished/pie/rawpiefishMFM.consumable.patch" />
         <option value="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.lua" />
         <option value="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/herbivorefoodMFM.statuseffect" />
         <option value="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodrawMFM.statuseffect" />
@@ -226,14 +187,18 @@
         <option value="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/robofoodMFM.statuseffect" />
         <option value="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/radioactivefoodMFM.statuseffect" />
         <option value="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/sugarfoodMFM.statuseffect" />
+        <option value="$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/unfinished/pie/rawpiefishMFM.consumable.patch" />
+        <option value="$PROJECT_DIR$/MoreFarmingFR/items/generic/meat/bologneseMFM.consumable.patch" />
+        <option value="$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/brownies/browniechocolateMFM.consumable.patch" />
+        <option value="$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/foodMFM.lua" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1040" />
-    <option name="height" value="734" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="832" />
+    <option name="y" value="35" />
+    <option name="width" value="1038" />
+    <option name="height" value="724" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -275,7 +240,7 @@
               <item name="MoreFarmingFR" type="462c0819:PsiDirectoryNode" />
               <item name="items" type="462c0819:PsiDirectoryNode" />
               <item name="generic" type="462c0819:PsiDirectoryNode" />
-              <item name="partsMFM" type="462c0819:PsiDirectoryNode" />
+              <item name="desserts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MoreFarmingFrackinRaces" type="b2602c69:ProjectViewProjectNode" />
@@ -283,8 +248,8 @@
               <item name="MoreFarmingFR" type="462c0819:PsiDirectoryNode" />
               <item name="items" type="462c0819:PsiDirectoryNode" />
               <item name="generic" type="462c0819:PsiDirectoryNode" />
-              <item name="partsMFM" type="462c0819:PsiDirectoryNode" />
-              <item name="raw" type="462c0819:PsiDirectoryNode" />
+              <item name="desserts" type="462c0819:PsiDirectoryNode" />
+              <item name="brownies" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MoreFarmingFrackinRaces" type="b2602c69:ProjectViewProjectNode" />
@@ -292,28 +257,7 @@
               <item name="MoreFarmingFR" type="462c0819:PsiDirectoryNode" />
               <item name="items" type="462c0819:PsiDirectoryNode" />
               <item name="generic" type="462c0819:PsiDirectoryNode" />
-              <item name="partsMFM" type="462c0819:PsiDirectoryNode" />
-              <item name="raw" type="462c0819:PsiDirectoryNode" />
               <item name="meat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MoreFarmingFrackinRaces" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MoreFarmingFrackinRaces" type="462c0819:PsiDirectoryNode" />
-              <item name="MoreFarmingFR" type="462c0819:PsiDirectoryNode" />
-              <item name="items" type="462c0819:PsiDirectoryNode" />
-              <item name="generic" type="462c0819:PsiDirectoryNode" />
-              <item name="partsMFM" type="462c0819:PsiDirectoryNode" />
-              <item name="unfinished" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MoreFarmingFrackinRaces" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MoreFarmingFrackinRaces" type="462c0819:PsiDirectoryNode" />
-              <item name="MoreFarmingFR" type="462c0819:PsiDirectoryNode" />
-              <item name="items" type="462c0819:PsiDirectoryNode" />
-              <item name="generic" type="462c0819:PsiDirectoryNode" />
-              <item name="partsMFM" type="462c0819:PsiDirectoryNode" />
-              <item name="unfinished" type="462c0819:PsiDirectoryNode" />
-              <item name="pie" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MoreFarmingFrackinRaces" type="b2602c69:ProjectViewProjectNode" />
@@ -384,11 +328,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="666" y="28" width="830" height="579" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24832214" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.48051947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -411,26 +355,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/drinks/juice/mangojuiceMFM.consumable.patch">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/drinks/juice/neonmelonjuiceMFM.consumable.patch">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/drinks/juice/toxictopjuiceMFM.consumable.patch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/drinks/juice/redapplejuiceMFM.consumable.patch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/drinks/juice/orangejuiceMFM.consumable.patch">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -492,13 +416,6 @@
     <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/drinks/milkshakes/milkshakestrawberryMFM.consumable.patch">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/meal/canned/rawcannedfishMFM.consumable.patch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/drinks/eggnogMFM.consumable.patch">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -554,16 +471,8 @@
     <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/drinks/other/hotchocolateMFM.consumable.patch">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefood.animation">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodcookedMFM.statuseffect">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefood.animation" />
+    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/carnivorefoodcookedMFM.statuseffect" />
     <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/raw/meat/raweelMFM.consumable.patch">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -604,20 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/unfinished/pie/rawpiefishMFM.consumable.patch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/foodMFM.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
         </state>
       </provider>
     </entry>
@@ -681,6 +576,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/meat/bologneseMFM.consumable.patch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/partsMFM/unfinished/pie/rawpiefishMFM.consumable.patch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/meat/rawfishMFM.consumable.patch">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/meal/canned/rawcannedfishMFM.consumable.patch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/brownies/browniechocolateMFM.consumable.patch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/items/generic/desserts/brownies/browniejelonMFM.consumable.patch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MoreFarmingFR/stats/effects/food/foodMFM.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
         </state>
       </provider>
     </entry>
