@@ -1,0 +1,30 @@
+[
+  [
+    {
+      "op" : "test",
+      "path" : "/effects",
+      "inverse" : true
+    },
+    {
+      "op" : "add",
+      "path" : "/effects",
+      "value" : [[ ]]
+    }
+  ],
+  [
+    {
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "carnivorefoodnopoisonMFM"
+      }
+    },
+    {
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "sugarfoodMFM"
+      }
+    }
+  ]
+]
