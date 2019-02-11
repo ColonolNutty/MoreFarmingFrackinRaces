@@ -1,8 +1,11 @@
 {
   "author" : "ColonolNutty",
-  "description" : "THIS REQUIRES \"CN MORE FARMING: REVITALIZATION\" LOOK FOR A LINK IN THE REQUIREMENTS SECTION TO THE RIGHT\n\n- Frackin' Races food type support, updates MFM foods to use the FR food types, such as carnivores being able to eat raw food.",
+  "description" : "THIS REQUIRES \"CN MORE FARMING: REVITALIZATION\" LOOK FOR A LINK IN THE REQUIREMENTS SECTION TO THE RIGHT\nIf you enjoy the mod, consider donating to my patreon account [url=https://www.patreon.com/colonolnutty]here[/url].\n\n- Frackin' Races food type support, updates MFM foods to use the FR food types, such as carnivores being able to eat raw food or herbivores eating plants.\n- Prevents overriding of Frackin' Races foods.",
   "friendlyName" : "CN More Farming - Frackin' Races",
   "includes" : ["MoreFarming", "FrackinRaces"],
+  "link" : "steam://url/CommunityFilePage/1652841243",
   "name" : "MoreFarmingFR",
+  "steamContentId" : "1652841243",
+  "tags" : "Species|Character Improvements|Food and Farming|Mechanics",
   "version" : "v1.0.0"
 }
