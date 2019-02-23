@@ -1,8 +1,8 @@
 {
-  "name" : "carnivorefoodnopoisonMFM",
+  "name" : "carnivorefoodfishMFM",
 
   "effectConfig" : {
-    "foodType" : "carnivorefoodnopoison"
+    "foodType" : "carnivorefoodfish"
   },
   "defaultDuration" : 1,
 
@@ -12,6 +12,6 @@
 
   "animationConfig" : "foodMFM.animation",
 
-  "label" : "Carnivore Food - No Poison",
+  "label" : "Raw Seafood - Meat eaters and Oceanic species get a buff. Herbivores and Robots get sick.",
   "icon" : "/interface/statuses/wellfed.png"
 }

@@ -1,8 +1,8 @@
 {
-  "name" : "carnivorefoodnopoisonMFM",
+  "name" : "carnivorefoodcookedMFM",
 
   "effectConfig" : {
-    "foodType" : "carnivorefoodnopoison"
+    "foodType" : "carnivorefoodcooked"
   },
   "defaultDuration" : 1,
 
@@ -12,6 +12,6 @@
 
   "animationConfig" : "foodMFM.animation",
 
-  "label" : "Carnivore Food - No Poison",
+  "label" : "Cooked Meat - Delicious! Unless you're an herbivore or mechanical, I guess...",
   "icon" : "/interface/statuses/wellfed.png"
 }

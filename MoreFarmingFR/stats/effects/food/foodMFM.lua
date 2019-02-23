@@ -33,6 +33,10 @@ NEGATIVE_EFFECTS = {
 function isFoodSafeToEat()
   if isCarnivoreFood() then
     return (isCarnivore() or isRadien() or isMantizi()) or (isCarnivore() and isOmnivore())
+  elseif isCarnivoreFoodCooked() then
+    return isCarnivore() or isOmnivore() or isRadien() or isMantizi()
+  elseif isCarnivoreFoodFish() then
+    return isCarnivore() or isOmnivore() or isRadien() or isMantizi()
   elseif isCarnivoreFoodNoPoison() then
     return isCarnivore() or isOmnivore() or isRadien() or isMantizi()
   elseif isHerbivoreFood() then
@@ -131,6 +135,14 @@ end
 
 function isCarnivoreFood()
   return self.foodType == "carnivorefood"
+end
+
+function isCarnivoreFoodCooked()
+  return self.foodType == "carnivorefoodcooked"
+end
+
+function isCarnivoreFoodFish()
+  return self.foodType == "carnivorefoodfish"
 end
 
 function isCarnivoreFoodNoPoison()
