@@ -16,14 +16,14 @@
       "op" : "add",
       "path" : "/effects/0/-",
       "value" : {
-        "effect" : "robofoodMFM"
+        "effect" : "robot_foodMFM"
       }
     },
     {
       "op" : "add",
       "path" : "/effects/0/-",
       "value" : {
-        "effect" : "sugarfoodMFM"
+        "effect" : "sugar_foodMFM"
       }
     }
   ]

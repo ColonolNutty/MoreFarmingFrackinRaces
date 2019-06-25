@@ -1,0 +1,18 @@
+{
+	"name" : "rock_rad_foodMFM",
+
+	"effectConfig" : {
+		"statusEffect": "rock_rad_food",
+		"foodTypes" : [ "ROCK_RAD" ]
+	},
+	"defaultDuration" : 1,
+
+	"scripts" : [
+		"/stats/effects/food/foodMFM.lua"
+	],
+
+  "animationConfig" : "/stats/effects/food/foodMFM.animation",
+
+  "label" : "Food Effect",
+  "icon" : "/interface/statuses/wellfed.png"
+}

@@ -1,0 +1,18 @@
+{
+	"name" : "robot_foodMFM",
+
+	"effectConfig" : {
+		"statusEffect": "robot_food",
+		"foodTypes" : [ "ROBOT_PLANT" ]
+	},
+	"defaultDuration" : 1,
+
+	"scripts" : [
+		"/stats/effects/food/foodMFM.lua"
+	],
+
+  "animationConfig" : "/stats/effects/food/foodMFM.animation",
+
+  "label" : "Food Effect",
+  "icon" : "/interface/statuses/wellfed.png"
+}

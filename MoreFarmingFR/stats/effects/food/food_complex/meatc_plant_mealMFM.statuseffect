@@ -1,0 +1,18 @@
+{
+	"name" : "meatc_plant_mealMFM",
+
+	"effectConfig" : {
+		"statusEffect": "meatc_plant_meal",
+		"foodTypes" : [ "MEAT_COOKED", "PLANT" ]
+	},
+	"defaultDuration" : 1,
+
+	"scripts" : [
+		"/stats/effects/food/foodMFM.lua"
+	],
+
+  "animationConfig" : "/stats/effects/food/foodMFM.animation",
+
+  "label" : "Food Effect",
+  "icon" : "/interface/statuses/wellfed.png"
+}

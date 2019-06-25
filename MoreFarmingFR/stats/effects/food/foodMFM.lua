@@ -30,51 +30,119 @@ NEGATIVE_EFFECTS = {
   "foodpoison"
 };
 
-function isFoodSafeToEat()
-  if isCarnivoreFood() then
-    return (isCarnivore() or isRadien() or isMantizi()) or (isCarnivore() and isOmnivore())
-  elseif isCarnivoreFoodCooked() then
-    return isCarnivore() or isOmnivore() or isRadien() or isMantizi()
-  elseif isCarnivoreFoodFish() then
-    return isCarnivore() or isOmnivore() or isRadien() or isMantizi()
-  elseif isCarnivoreFoodNoPoison() then
-    return isCarnivore() or isOmnivore() or isRadien() or isMantizi()
-  elseif isHerbivoreFood() then
-     return (isHerbivore() or isOmnivore() or isRadien() or isMantizi() or (isCarnivore() and isOmnivore())) or (isSugar() and isSugarFood())
-  elseif isRadioactiveFood() then
-    return isRadienSpecies() or isNovakidSpecies() or isRadien()
-  elseif isRobotFood() then
-    return isRobot() or isRadien() or isMantizi()
-  end
-  return false;
-end
-
 function init()
-  self.foodType = config.getParameter("foodType", nil)
-  self.species = world.entitySpecies(entity.id())
+  self.debugEnabled = false;
+	self.foodTypes = config.getParameter("foodTypes");
+  self.statusEffect = config.getParameter("statusEffect", nil);
+	self.dietConfig = root.assetJson("/scripts/fr_diets.config");
+	self.species = world.entitySpecies(entity.id());
+	local success
+	if self.species then
+		success, self.speciesConfig = pcall(
+			function ()
+				return root.assetJson(string.format("/species/%s.raceeffect", self.species));
+			end
+		)
+	end
+	if not success then self.speciesConfig = {} end
+	self.diet = self.speciesConfig.diet;
+	if self.diet == nil then self.diet = "omnivore" end -- Treat races without diets as omnivores
+
+	-- Grab premade diet
+	if type(self.diet) == "string" then
+		self.diet = self.dietConfig.diets[self.diet];
+	end
+	self.whitelist = self.diet[1] or {};
+	self.blacklist = self.diet[2] or {};
+
+  printTable(self.diet, "diet");
+  printTable(self.whitelist, "whitelist");
+  printTable(self.blacklist, "blacklist");
+
+  self.foodIsBad = isFoodBad();
   self.hasAppliedEffects = false;
   self.durations = nil;
 end
 
+function isFoodBad()
+  self.foodChecks = {};
+  for _,foodType in pairs(self.foodTypes) do
+    logInfo("Checking foodType " .. foodType)
+    self.foodChecks[foodType] = checkFood(self.whitelist, self.blacklist, foodType);
+    if self.foodChecks[foodType] == false then
+      logInfo("Food is bad " .. foodType)
+      return true
+    end
+  end
+  logInfo("Food is good")
+  return false;
+end
+
+function checkFood(whitelist, blacklist, foodType)
+	local parent = self.dietConfig.groups[foodType]
+  logInfo("Checking food type " .. foodType)
+  printTable(whitelist, "whitelist 2")
+  printTable(blacklist, "blacklist 2")
+	-- If the type is in the whitelist (can eat)
+	if whitelist[foodType] ~= nil then
+    logInfo("Food in whitelist")
+		return true
+	-- If the type is in the blacklist (can't eat)
+	elseif blacklist[foodType] then
+    logInfo("Food in blacklist")
+		return false
+	-- If the type wasn't found, but there is a parent, check the parent
+	elseif parent then
+    logInfo("Has Parent")
+    printTable(parent, "parent")
+		-- Handling for multiple parenting (weird shit, but yeah)
+		-- Checks ALL parents, but only needs ONE to succeed
+		if type(parent) == "table" then
+			local result = false
+			for _,par in pairs(parent) do
+				result = checkFood(whitelist, blacklist, par)
+				if result then break end
+      end
+      logInfo("Table worked")
+			return result
+		end
+		return checkFood(whitelist, blacklist, parent)
+  end
+  logInfo("Checked food and nothing matched! Assuming is bad.")
+	return false
+end
+
 function update(dt)
+  logInfo("Updating");
   if self.hasAppliedEffects then
+    logInfo("Already Applied Effects");
     return;
   end
   local positiveEffects = discoverPositiveEffects(dt)
   if positiveEffects == nil then
+    logInfo("No positive effects found");
     return;
   end
+  logInfo("Removing positive effects");
   for idx, positiveEffect in ipairs(positiveEffects) do
     status.removeEphemeralEffect(positiveEffect.effect);
   end
+  logInfo("Removing negative effects");
   for idx, negative_effect in ipairs(NEGATIVE_EFFECTS) do
     status.removeEphemeralEffect(negative_effect);
   end
-  if isFoodSafeToEat() then
-    applyEffects(positiveEffects)
-  else
-    applyEffects(NEGATIVE_EFFECTS)
+  if self.foodIsBad then
+    logInfo("Food is bad!");
   end
+
+  if not self.foodIsBad then
+    logInfo("Applying positive effects");
+    applyEffects(positiveEffects);
+  else
+    logInfo("Applying negative effects");
+    applyEffects(NEGATIVE_EFFECTS);
+  end
+  logInfo("Effects applied");
   self.hasAppliedEffects = true;
 end
 
@@ -121,11 +189,13 @@ end
 
 function applyEffects(effects)
   status.addEphemeralEffects(effects, entity.id())
-  status.addEphemeralEffects({self.foodType}, entity.id())
+  if self.statusEffect ~= nil then
+    status.addEphemeralEffects({self.statusEffect}, entity.id())
+  end
 end
 
-function contains_value(tab, val)
-  for index, value in ipairs(tab) do
+function contains_value(arr, val)
+  for index, value in ipairs(arr) do
     if value == val then
         return true
     end
@@ -133,74 +203,63 @@ function contains_value(tab, val)
   return false
 end
 
-function isCarnivoreFood()
-  return self.foodType == "carnivorefood"
+function printTable(tabVal, previousName)
+  if not self.debugEnabled then
+    return
+  end
+  if(tabVal == nil) then
+    logInfo("tabVal is nil for '" .. previousName .. "'. Nothing to print");
+    return;
+  end
+  local prevName = previousName or "";
+  if(tabVal[1] ~= nil) then
+    logInfo("Printing array");
+    for idx,val in ipairs(tabVal) do
+      if(type(val) == "function") then
+        logInfo("'" .. prevName .. "' - table '" .. idx .. "'");
+      elseif(type(val) == "table") then
+        printTable(val, "'" .. prevName .. "' - table '" .. idx .. "'");
+      else
+        printValue(val, "'" .. prevName .. "' - '" .. idx .. "'");
+      end
+    end
+  elseif(type(tabVal) == "table") then
+    logInfo("Printing table");
+    if(#tabVal == 0) then
+      logInfo("table was empty");
+    end
+    for name,val in pairs(tabVal) do
+      if(type(val) == "function") then
+        logInfo("'" .. prevName .. "' - table '" .. name .. "'");
+      elseif(type(val) == "table") then
+        printTable(val, "'" .. prevName .. "' - table '" .. name .. "'");
+      else
+        printValue(val, "'" .. prevName .. "' - '" .. name .. "'");
+      end
+    end
+  else
+    logInfo("Printing value");
+    printValue(tabVal, "'" .. previousName .. "'")
+  end
 end
 
-function isCarnivoreFoodCooked()
-  return self.foodType == "carnivorefoodcooked"
+function printValue(val, previousName)
+  if not self.debugEnabled then
+    return
+  end
+  if (val == true) then
+    logInfo(" Name " .. previousName .. " val true")
+  elseif (val == false) then
+    logInfo(" Name " .. previousName .. " val false")
+  else
+    logInfo(" Name " .. previousName .. " val " .. val)
+  end
 end
 
-function isCarnivoreFoodFish()
-  return self.foodType == "carnivorefoodfish"
-end
 
-function isCarnivoreFoodNoPoison()
-  return self.foodType == "carnivorefoodnopoison"
-end
-
-function isHerbivoreFood()
-  return self.foodType == "herbivorefood"
-end
-
-function isRobotFood()
-  return self.foodType == "robofood"
-end
-
-function isSugarFood()
-  return self.foodType == "sugarfood"
-end
-
-function isRadioactiveFood()
-  return self.foodType == "radioactive"
-end
-
-function isRadienSpecies()
-  return self.species == "radien"
-end
-
-function isNovakidSpecies()
-  return self.species == "novakid"
-end
-
-function isMantiziSpecies()
-  return self.species == "mantizi"
-end
-
-function isRadien()
-  return status.statPositive("isRadien")
-end
-
-function isMantizi()
-  return status.statPositive("isMantizi")
-end
-
-function isCarnivore()
-  return status.statPositive("isCarnivore")
-end
-
-function isOmnivore()
-  return status.statPositive("isOmnivore")
-end
-
-function isHerbivore()
-  return status.statPositive("isHerbivore")
-end
-
-function isRobot()
-  return status.statPositive("isRobot")
-end
-
-function isSugar()
-  return status.statPositive("isSugar")
+function logInfo(message)
+  if not self.debugEnabled then
+    return
+  end
+  sb.logInfo(message)
 end

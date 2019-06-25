@@ -16,14 +16,14 @@
       "op" : "add",
       "path" : "/effects/0/-",
       "value" : {
-        "effect" : "carnivorefoodnopoisonMFM"
+        "effect" : "meat_plantMFM"
       }
     },
     {
       "op" : "add",
       "path" : "/effects/0/-",
       "value" : {
-        "effect" : "sugarfoodMFM"
+        "effect" : "sugar_foodMFM"
       }
     }
   ]

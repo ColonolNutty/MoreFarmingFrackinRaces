@@ -1,0 +1,18 @@
+{
+	"name" : "frenchtoast_mealMFM",
+
+	"effectConfig" : {
+		"statusEffect": "french_toast_meal",
+		"foodTypes" : [ "PLANT", "EGG" ]
+	},
+	"defaultDuration" : 1,
+
+	"scripts" : [
+		"/stats/effects/food/foodMFM.lua"
+	],
+
+  "animationConfig" : "/stats/effects/food/foodMFM.animation",
+
+  "label" : "Food Effect",
+  "icon" : "/interface/statuses/wellfed.png"
+}
