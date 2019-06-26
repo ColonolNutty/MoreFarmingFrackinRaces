@@ -16,7 +16,7 @@
       "op" : "add",
       "path" : "/effects/0/-",
       "value" : {
-        "effect" : "plant_foodMFM"
+        "effect" : "plant_egg_dairy_mealMFM"
       }
     }
   ]

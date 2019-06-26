@@ -1,0 +1,12 @@
+{
+	"name" : "_meatc_fish_mealMFM",
+
+	"effectConfig" : {
+		"foodTypes" : [ "MEAT_COOKED", "FISH" ]
+	},
+	"defaultDuration" : 0,
+
+	"scripts" : [
+		"/stats/effects/food/foodBase.lua"
+	]
+}

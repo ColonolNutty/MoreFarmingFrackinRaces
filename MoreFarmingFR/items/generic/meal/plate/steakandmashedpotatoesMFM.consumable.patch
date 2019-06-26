@@ -10,5 +10,14 @@
       "path" : "/effects",
       "value" : [[ ]]
     }
+  ],
+  [
+    {
+      "op" : "add",
+      "path" : "/effects/0/-",
+      "value" : {
+        "effect" : "meatc_plant_mealMFM"
+      }
+    }
   ]
 ]

@@ -1,0 +1,12 @@
+{
+	"name" : "_robo_dessertMFM",
+
+	"effectConfig" : {
+		"foodTypes" : [ "ROBOT_PLANT", "HIGH_GLUCOSE" ]
+	},
+	"defaultDuration" : 0,
+
+	"scripts" : [
+		"/stats/effects/food/foodBase.lua"
+	]
+}

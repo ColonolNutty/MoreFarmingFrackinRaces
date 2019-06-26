@@ -1,0 +1,12 @@
+{
+	"name" : "_meatc_fruit_plant_mealMFM",
+
+	"effectConfig" : {
+		"foodTypes" : [ "MEAT_COOKED", "FRUIT", "PLANT" ]
+	},
+	"defaultDuration" : 0,
+
+	"scripts" : [
+		"/stats/effects/food/foodBase.lua"
+	]
+}

@@ -16,14 +16,7 @@
       "op" : "add",
       "path" : "/effects/0/-",
       "value" : {
-        "effect" : "plant_foodMFM"
-      }
-    },
-    {
-      "op" : "add",
-      "path" : "/effects/0/-",
-      "value" : {
-        "effect" : "sugar_foodMFM"
+        "effect" : "plant_sugar_dairy_mealMFM"
       }
     }
   ]

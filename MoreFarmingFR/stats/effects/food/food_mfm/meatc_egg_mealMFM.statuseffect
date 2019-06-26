@@ -1,0 +1,18 @@
+{
+	"name" : "meatc_egg_mealMFM",
+
+	"effectConfig" : {
+		"statusEffect": "_meatc_egg_mealMFM",
+		"foodTypes" : [ "MEAT_COOKED", "EGG" ]
+	},
+	"defaultDuration" : 1,
+
+	"scripts" : [
+		"/stats/effects/food/foodMFM.lua"
+	],
+
+  "animationConfig" : "/stats/effects/food/foodMFM.animation",
+
+  "label" : "Food Effect",
+  "icon" : "/interface/statuses/wellfed.png"
+}

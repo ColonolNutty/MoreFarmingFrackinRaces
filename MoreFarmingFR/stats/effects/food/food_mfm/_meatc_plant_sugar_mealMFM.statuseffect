@@ -1,0 +1,12 @@
+{
+	"name" : "_meatc_plant_sugar_mealMFM",
+
+	"effectConfig" : {
+		"foodTypes" : [ "MEAT_COOKED", "PLANT", "HIGH_GLUCOSE" ]
+	},
+	"defaultDuration" : 0,
+
+	"scripts" : [
+		"/stats/effects/food/foodBase.lua"
+	]
+}

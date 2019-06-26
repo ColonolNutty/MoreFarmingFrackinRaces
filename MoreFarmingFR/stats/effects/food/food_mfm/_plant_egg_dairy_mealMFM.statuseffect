@@ -1,0 +1,12 @@
+{
+	"name" : "_plant_egg_dairy_mealMFM",
+
+	"effectConfig" : {
+		"foodTypes" : [ "PLANT", "EGG", "DAIRY" ]
+	},
+	"defaultDuration" : 0,
+
+	"scripts" : [
+		"/stats/effects/food/foodBase.lua"
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"name" : "robo_dessertMFM",
+
+	"effectConfig" : {
+		"statusEffect": "_robo_dessertMFM",
+		"foodTypes" : [ "ROBOT_PLANT", "HIGH_GLUCOSE" ]
+	},
+	"defaultDuration" : 1,
+
+	"scripts" : [
+		"/stats/effects/food/foodMFM.lua"
+	],
+
+  "animationConfig" : "/stats/effects/food/foodMFM.animation",
+
+  "label" : "Food Effect",
+  "icon" : "/interface/statuses/wellfed.png"
+}

@@ -1,0 +1,12 @@
+{
+	"name" : "_fruit_plant_egg_sugar_dairy_mealMFM",
+
+	"effectConfig" : {
+		"foodTypes" : [ "FRUIT", "PLANT", "EGG", "HIGH_GLUCOSE", "DAIRY" ]
+	},
+	"defaultDuration" : 0,
+
+	"scripts" : [
+		"/stats/effects/food/foodBase.lua"
+	]
+}
