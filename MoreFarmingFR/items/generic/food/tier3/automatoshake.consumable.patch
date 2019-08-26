@@ -16,7 +16,7 @@
       "op" : "add",
       "path" : "/effects/0/-",
       "value" : {
-        "effect" : "robot_dessertMFM"
+        "effect" : "robo_dessertMFM"
       }
     }
   ]
