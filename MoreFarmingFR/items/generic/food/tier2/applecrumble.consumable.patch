@@ -16,7 +16,7 @@
       "op" : "add",
       "path" : "/effects/0/-",
       "value" : {
-        "effect" : "fruit_sugar_dairy_foodMFM"
+        "effect" : "fruit_sugar_dairy_mealMFM"
       }
     }
   ]
